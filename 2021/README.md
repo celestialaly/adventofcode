@@ -1,6 +1,5 @@
 ### PHP
-`php 1/1.php`
-`php 1/2.php`
+`php main.php 1`
 
-### Go lang
+### Golang
 `go run 1/main.go`
