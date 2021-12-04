@@ -1,0 +1,2 @@
+<?php 
+echo array_reduce(file('1/input.txt'), function($c, $v) use (&$p) { $c = $p !== null && $v > $p ? $c+1 : $c; $p = $v; return $c; }, 0)."\n";
