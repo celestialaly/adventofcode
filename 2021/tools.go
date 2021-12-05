@@ -14,7 +14,13 @@ func ReadFileAsArray(day string) []string {
 		log.Fatal(err)
 	}
 	
-	return strings.Split(string(fileBytes), "\n")
+	data := strings.Split(string(fileBytes), "\n")
+
+	if data[len(data)-1] == "" {
+		return data[:len(data)-1]
+	}
+
+	return data
 }
 
 func ReadFileAsArrayOfInt(day string) []int {
