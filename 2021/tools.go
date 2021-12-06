@@ -7,14 +7,18 @@ import (
 	"strconv"
 )
 
-func ReadFileAsArray(day string) []string {
+func ReadFile(day string) string {
     fileBytes, err := ioutil.ReadFile(day+"/input.txt")
 
 	if err != nil {
 		log.Fatal(err)
 	}
 	
-	data := strings.Split(string(fileBytes), "\n")
+	return string(fileBytes)
+}
+
+func ReadFileAsArray(day string) []string {
+	data := strings.Split(ReadFile(day), "\n")
 
 	if data[len(data)-1] == "" {
 		return data[:len(data)-1]
