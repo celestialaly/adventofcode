@@ -1,0 +1,12 @@
+package days
+
+class DayX : Day(2) {
+
+    override fun partOne(): Any {
+        return "test"
+    }
+    
+    override fun partTwo(): Any {
+        return "test"
+    }
+}
