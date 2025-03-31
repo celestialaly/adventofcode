@@ -22,6 +22,10 @@ public abstract class Day {
                 .toList();
     }
 
+    protected String readFileAsString(int day) throws Exception {
+        return Files.readString(Path.of("src/main/resources/day" + day + ".txt"));
+    }
+
     protected Stream<String> readFile(int day) throws Exception {
         return Files.lines(Path.of("src/main/resources/day" + day + ".txt"));
     }
