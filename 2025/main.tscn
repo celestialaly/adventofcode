@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck63ynf2xcnwd"]
+
+[ext_resource type="Script" uid="uid://dnpcwwd5k8bg7" path="res://adventofcode.gd" id="1_ig7tw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ig7tw"]
+font_size = 45
+font_color = Color(0.97556156, 0.3187498, 0.50078833, 1)
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0xm2m"]
+font_size = 70
+font_color = Color(1, 0.60784316, 0.8509804, 1)
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 10
+shadow_color = Color(0.1148968, 0.11489681, 0.1148968, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h2yge"]
+font_size = 55
+font_color = Color(0.8663574, 0.66242677, 0.9813052, 1)
+outline_size = 8
+outline_color = Color(0, 0.22745098, 0.22745098, 1)
+shadow_color = Color(0.1148968, 0.11489681, 0.1148968, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Result" type="Label" parent="."]
+offset_top = 230.0
+offset_right = 1148.0
+offset_bottom = 648.0
+text = "Placeholder"
+label_settings = SubResource("LabelSettings_ig7tw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AoC" type="Label" parent="."]
+offset_top = -1.0
+offset_right = 1151.0
+offset_bottom = 178.0
+text = "Advent of Code 2025"
+label_settings = SubResource("LabelSettings_0xm2m")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Day" type="Label" parent="."]
+offset_left = -2.0
+offset_top = 95.0
+offset_right = 1149.0
+offset_bottom = 274.0
+text = "~ Day 1 ~ "
+label_settings = SubResource("LabelSettings_h2yge")
+horizontal_alignment = 1
+vertical_alignment = 1
