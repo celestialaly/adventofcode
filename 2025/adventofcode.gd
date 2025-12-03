@@ -3,7 +3,7 @@ extends Node2D
 @onready var day_label: Label = $Day
 @onready var result_label: Label = $Result
 
-@export var current_day: int = 1
+@export var current_day: int = 2
 
 func _ready() -> void:
 	day_label.text = str('~ Day ', current_day, ' ~')
