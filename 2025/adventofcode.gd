@@ -9,5 +9,5 @@ func _ready() -> void:
 	day_label.text = str('~ Day ', current_day, ' ~')
 	
 	# set script according to the current_day
-	var path = str('res://days/', current_day, '/day', current_day, '.gd')
+	var path = str('res://days/', current_day, '/main.gd')
 	result_label.set_script(load(path))

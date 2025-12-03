@@ -1,7 +1,7 @@
 extends Node
 
-func read_input(day: int) -> Array:
-	var path = str('res://days/', day, '/input.txt')
+func read_input(day: int, filename: String = 'input.txt') -> Array:
+	var path = str('res://days/', day, '/', filename)
 	var file = FileAccess.open(path, FileAccess.READ)
 	
 	var line = file.get_line()
@@ -12,3 +12,10 @@ func read_input(day: int) -> Array:
 		line = file.get_line()
 	
 	return data
+
+func read_input_test(day: int) -> Array:
+	return read_input(day, 'test.txt')
+
+
+func format_result(part1, part2) -> String:
+	return str('Part 1: ', part1, '\n', 'Part 2: ', part2)
